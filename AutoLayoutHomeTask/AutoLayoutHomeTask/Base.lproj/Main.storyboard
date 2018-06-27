@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YqA-bb-mB1"/>
+                        <viewControllerLayoutGuide type="bottom" id="KT1-ta-tPD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFF-PC-Wfa">
+                                <rect key="frame" x="30" y="210" width="607" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHn-SI-F1j">
+                                        <rect key="frame" x="264" y="44.5" width="79" height="46"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.1483619338815334" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Resize">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resizeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lrk-UY-NHa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12112047977587026" green="0.47928435113866408" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="iHn-SI-F1j" firstAttribute="centerX" secondItem="vFF-PC-Wfa" secondAttribute="centerX" id="CxV-Sb-UeK">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.5"/>
+                                    </constraint>
+                                    <constraint firstItem="iHn-SI-F1j" firstAttribute="centerY" secondItem="vFF-PC-Wfa" secondAttribute="centerY" id="MAc-At-0jA">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-H2-A7n">
+                                <rect key="frame" x="30" y="30" width="607" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-wz-AeM">
+                                        <rect key="frame" x="264" y="44.5" width="79" height="46"/>
+                                        <color key="backgroundColor" red="0.12549019607843137" green="0.396078431372549" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Resize">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resizeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fse-bG-wjl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.28147263709999998" blue="0.32973851170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="IBe-wz-AeM" firstAttribute="centerY" secondItem="B6C-H2-A7n" secondAttribute="centerY" id="BYJ-Zd-at9">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstItem="IBe-wz-AeM" firstAttribute="centerX" secondItem="B6C-H2-A7n" secondAttribute="centerX" id="OsL-k0-xZF">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.5"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l4J-eS-rwK" firstAttribute="bottom" secondItem="B6C-H2-A7n" secondAttribute="bottom" constant="30" id="0h9-p9-cnM"/>
+                            <constraint firstItem="vFF-PC-Wfa" firstAttribute="width" secondItem="B6C-H2-A7n" secondAttribute="width" id="IGY-VC-j5f"/>
+                            <constraint firstItem="B6C-H2-A7n" firstAttribute="leading" secondItem="l4J-eS-rwK" secondAttribute="leading" constant="30" id="Ji6-R2-05c"/>
+                            <constraint firstItem="vFF-PC-Wfa" firstAttribute="top" secondItem="l4J-eS-rwK" secondAttribute="top" constant="30" id="Vf0-HI-8Y7"/>
+                            <constraint firstItem="l4J-eS-rwK" firstAttribute="trailing" secondItem="B6C-H2-A7n" secondAttribute="trailing" constant="30" id="dkP-NX-cz3">
+                                <variation key="heightClass=compact-widthClass=regular" constant="394"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="vFF-PC-Wfa" firstAttribute="top" secondItem="B6C-H2-A7n" secondAttribute="bottom" constant="45.000000000000057" id="fIF-6z-IfR">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-354"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                            </constraint>
+                            <constraint firstItem="vFF-PC-Wfa" firstAttribute="leading" secondItem="B6C-H2-A7n" secondAttribute="trailing" constant="52" id="kM2-yW-lQw"/>
+                            <constraint firstItem="l4J-eS-rwK" firstAttribute="trailing" secondItem="vFF-PC-Wfa" secondAttribute="trailing" constant="30" id="nYh-LL-BIK"/>
+                            <constraint firstItem="B6C-H2-A7n" firstAttribute="top" secondItem="YqA-bb-mB1" secondAttribute="bottom" constant="30" id="qTz-ir-0Q9"/>
+                            <constraint firstItem="vFF-PC-Wfa" firstAttribute="leading" secondItem="l4J-eS-rwK" secondAttribute="leading" constant="30" id="vz1-WI-Uib">
+                                <variation key="heightClass=compact-widthClass=regular" constant="396"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="vFF-PC-Wfa" firstAttribute="leading" secondItem="B6C-H2-A7n" secondAttribute="trailing" constant="54" id="xem-83-DHo"/>
+                            <constraint firstItem="vFF-PC-Wfa" firstAttribute="height" secondItem="B6C-H2-A7n" secondAttribute="height" id="y2l-cZ-KpJ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="KT1-ta-tPD" firstAttribute="top" secondItem="vFF-PC-Wfa" secondAttribute="bottom" constant="30" id="yxa-8D-MGA">
+                                <variation key="heightClass=regular-widthClass=regular" constant="27"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l4J-eS-rwK"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0h9-p9-cnM"/>
+                                <exclude reference="IGY-VC-j5f"/>
+                                <exclude reference="Vf0-HI-8Y7"/>
+                                <exclude reference="kM2-yW-lQw"/>
+                                <exclude reference="xem-83-DHo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="0h9-p9-cnM"/>
+                                <exclude reference="dkP-NX-cz3"/>
+                                <include reference="IGY-VC-j5f"/>
+                                <include reference="Vf0-HI-8Y7"/>
+                                <exclude reference="fIF-6z-IfR"/>
+                                <include reference="kM2-yW-lQw"/>
+                                <exclude reference="vz1-WI-Uib"/>
+                                <exclude reference="xem-83-DHo"/>
+                                <exclude reference="y2l-cZ-KpJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="vFF-PC-Wfa" id="WIy-4c-qGT"/>
+                        <outlet property="height" destination="y2l-cZ-KpJ" id="f9Y-aj-1Z4"/>
+                        <outlet property="redView" destination="B6C-H2-A7n" id="60v-tZ-shQ"/>
+                        <outlet property="width" destination="IGY-VC-j5f" id="MxP-SL-L2b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.25899280575541" y="-70.143884892086334"/>
+        </scene>
+    </scenes>
+</document>
